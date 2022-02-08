@@ -5,14 +5,14 @@
         </title>
         <body>
             <input id="input" placeholder="type here">
-            <button id="button" onclick="show()">Show</button>
-            <label id="result"></label>
+            <button id="button" onclick="show()">Show</button><br>
+            <label  style="font-size: 20p;font-weight: bold;" id="result"></label>
 
-            <label id="alpha"></label>
+            <label style="font-size: 20p;font-weight: bold;" id="alpha"></label>
 
-            <label id="special"></label>
+            <label style="font-size: 20p;font-weight: bold;" id="special"></label>
 
-            <label id="number"></label>
+            <label style="font-size: 20p;font-weight: bold;" id="number"></label>
         </body>
         <script>
             function show(){
@@ -28,10 +28,10 @@
             console.log(reverse);
 
             if(input_lower==reverse){
-                document.getElementById("result").innerHTML=input+" is a palindrome";
+                document.getElementById("result").innerHTML=input+" is a palindrome<br>";
             }
             else{
-                document.getElementById("result").innerHTML=input+" is not a palindrome";
+                document.getElementById("result").innerHTML=input+" is not a palindrome<br>";
             }
             var count_alphabet=0;
             var count_special=0; 
@@ -52,7 +52,7 @@ var specialChars = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/gi;
         
         count_number++;
   }
-  document.getElementById("alpha").innerHTML= "aplbhabets="+count_alphabet+"<br";
+  document.getElementById("alpha").innerHTML= "aplbhabets="+count_alphabet+"<br>";
   document.getElementById("number").innerHTML="numbers="+count_number+"<br>";
   document.getElementById("special").innerHTML="special characters="+count_special+"<br>";
 }
